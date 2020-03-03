@@ -1,0 +1,31 @@
+#stageComp {
+  margin: .5rem;
+  height: 100vh;
+  display: flex;
+  background-color: darkgrey;
+}
+
+.participant {
+  margin: 1rem;
+  max-height: 30%;
+}
+
+.participant-title {
+  margin: 1rem auto;
+  text-align: center;
+  color: whitesmoke;
+}
+.participant-bundle {
+  background-color: darkslategray;
+
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  max-height: 5rem;
+}
+
+.icons {
+  margin: 1rem;
+}
