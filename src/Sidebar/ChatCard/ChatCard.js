@@ -6,8 +6,6 @@ export class ChatCard extends Component {
     const { chat, person, avatar } = this.props;
     let date = new Date(chat.timestamp);
     let dateStr = date.toLocaleTimeString();
-    console.log(dateStr);
-
     
     return (
       <Fragment>

@@ -6,7 +6,14 @@ export default class Stage extends Component {
   render() {
     return (
       <section className="stage">
-        Le Stage
+        {this.props.participants.map(participant => (
+          <Participant 
+            participant={participant} 
+            key={participant.id}/>
+        ))}
+        <div className="teacher">
+          <i class="fas fa-kiwi-bird"/>
+        </div>
       </section>
     )
   }

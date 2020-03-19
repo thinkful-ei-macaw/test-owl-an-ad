@@ -103,13 +103,12 @@ class App extends Component {
         type: 'left stage',
         timestamp: 1548852724247
       }
-    ], 
-    teacher: {
-      name: 'Joe Teacher Jr.',
-      photo: null
-    }
+    ]
   }
 
+  filterForOnStage() {
+    return this.state.participants.filter(participant => participant.onStage === true);
+  }
 
 
   render() {
@@ -120,7 +119,7 @@ class App extends Component {
             participants={this.state.participants}
             chatEvents={this.state.chatEvents}
           />
-          <Stage />
+          <Stage participants={this.filterForOnStage()}/>
         </div>
         <Controls />
       </main>

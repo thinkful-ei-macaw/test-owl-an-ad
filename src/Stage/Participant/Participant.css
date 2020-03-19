@@ -1,31 +1,46 @@
 .participant {
-  margin: 1rem;
-  max-height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-grow: 1;
+  background-color: darkslategray;
+  height: 100%;
 }
 
 .participant-title {
-  margin: 1rem auto;
+  margin: auto;
   text-align: center;
   color: whitesmoke;
 }
 
-.participant-bundle {
-  background-color: darkslategray;
+.participant-panel {
+  padding: 1rem 1rem 0;
+  width: 65%;
+  margin: 0 auto;
+  background-color:rgb(40, 100, 179);
 
 }
 
 .icon-container {
   display: flex;
-  justify-content: space-around;
-  max-height: 5rem;
+  justify-content: center;
+  margin-top: .5rem;
+  border-top: 2px solid rgb(180, 81, 81);
 }
 
 .icons {
-  margin: 1rem;
+  display: block;
+  margin: .5rem 1rem;
 }
 
-.user-image {
-  font-size: 100px;
-  /* width: 100px; */
-  /* height: 100px; */
+.participant-image {
+  margin-top: 6rem;
+  justify-self: center;
+  align-self: center;
+  display: block;
+}
+
+.stageImage {
+  border-radius: 50%;
+  background-color: rgb(226, 166, 166);
 }
